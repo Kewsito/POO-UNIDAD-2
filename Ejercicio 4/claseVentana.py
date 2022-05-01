@@ -15,7 +15,7 @@ class Ventana:
             print("ERROR AL CARGAR LOS DATOS")
 
     def mostrar(self):
-        return print("Titulo: %s \n Vertice Superior Izquierdo: VI = (%d,%d) \n Vertice Inferior Derecho: VD = (%d,%d)",self.__titulo,self.__XvsI,self.__YvsI,self.__XvinfD,self.__YvinfD)
+        return print("Titulo:",self.__titulo," \n Vertice Superior Izquierdo: VI = (",self.__XvsI,",",self.__YvsI,") \n Vertice Inferior Derecho: VD = (",self.__XvinfD,",",self.__YvinfD,")")
     def moverDerecha(self,pos=1):
         if self.__XvinfD+pos>=0:
             self.__XvinfD+=pos
@@ -41,4 +41,4 @@ class Ventana:
     def ancho(self):
         return self.__XvinfD-self.__XvsI
     def getTitulo(self):
-        return print("Titulo: %s",self.__titulo)
+        return print("Titulo:",self.__titulo)
