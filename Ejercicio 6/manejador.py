@@ -40,4 +40,13 @@ class Manejador_Viajeros:
             print('Cantidad de millas= {}', n)
         else:
             print("Error")
-        
+    def Sobrecarga23(self):
+        print("--APARTADO 2 Y 3--")
+        viajero = self.__lista[0]
+        viajero.mostrar()
+        viajero += 1000
+        print("Se acumulan nuevas millas")
+        viajero.mostrar()
+        print("Se realiza un canje de millas")
+        viajero -= 2500
+        viajero.mostrar()
