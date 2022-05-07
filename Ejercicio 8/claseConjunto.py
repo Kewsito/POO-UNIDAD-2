@@ -1,7 +1,3 @@
-from operator import truediv
-from xml.etree.ElementTree import ElementTree
-
-
 class Conjunto:
     __lista=list
 
