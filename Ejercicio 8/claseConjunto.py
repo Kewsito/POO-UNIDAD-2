@@ -23,7 +23,6 @@ class Conjunto:
         return Conjunto(a)
     def __eq__(self,otro):
         b=False
-        c=0
         if len(self.__lista)==len(otro.__lista):
             for element in self.__lista:
                 if element not in otro.__lista:
