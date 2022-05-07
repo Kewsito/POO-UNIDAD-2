@@ -24,8 +24,8 @@ class Conjunto:
     def __eq__(self,otro):
         b=False
         if len(self.__lista)==len(otro.__lista):
+            b=True
             for element in self.__lista:
                 if element not in otro.__lista:
-                    return b
-        b=True
+                    b=False
         return b
